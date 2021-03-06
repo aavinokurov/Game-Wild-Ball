@@ -15,6 +15,11 @@ namespace WildBall.Inputs
             playerRigidbody.AddForce(movement * speed);
         }
 
+        public void JumpPlayer()
+        {
+            playerRigidbody.AddForce(Vector3.up, ForceMode.Impulse);
+        }
+
 #if UNITY_EDITOR
 
         [ContextMenu("Reset Value")]
