@@ -21,6 +21,10 @@ namespace WildBall.Inputs
         private void FixedUpdate()
         {
             playerMovement.MovePlayer(movement);
+            if (Input.GetButtonDown(GlobalStringVars.JUMP_BUTTON))
+            {
+                playerMovement.JumpPlayer();
+            }
         }
     }
 }
