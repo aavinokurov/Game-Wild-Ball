@@ -12,9 +12,16 @@ namespace WildBall
         {
             if (player.CompareTag("Player"))
             {
-                Time.timeScale = 0;
-                gameOverPanel.SetActive(true);
+                StartCoroutine(timerGameOver());
             }
+        }
+
+        public IEnumerator timerGameOver()
+        {
+            yield return new WaitForSeconds(1);
+
+            Time.timeScale = 0;
+            gameOverPanel.SetActive(true);
         }
     }
 }

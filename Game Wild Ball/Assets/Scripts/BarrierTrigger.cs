@@ -41,6 +41,12 @@ namespace WildBall
                 Time.timeScale = 0;
                 gameOverPanel.SetActive(true);
             }
+
+            if(player.CompareTag("Heart") && indexHeart > 0 && indexHeart < Hearts.Length)
+            {
+                indexHeart--;
+                Hearts[indexHeart].sprite = imgFullHearts;                
+            }
         }
 
         private IEnumerator timerImmortality()
