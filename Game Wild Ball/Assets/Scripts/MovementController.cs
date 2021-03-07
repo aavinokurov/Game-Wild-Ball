@@ -9,6 +9,7 @@ namespace WildBall.Inputs
     {
         [SerializeField, Range(0, 10)] private float speed = 2;
         [SerializeField] private Rigidbody playerRigidbody;
+        private bool isJump;
 
         public void MovePlayer(Vector3 movement)
         {
@@ -17,7 +18,16 @@ namespace WildBall.Inputs
 
         public void JumpPlayer()
         {
-            playerRigidbody.AddForce(Vector3.up, ForceMode.Impulse);
+            if (isJump)
+            {
+                isJump = false;
+                playerRigidbody.AddForce(Vector3.up, ForceMode.Impulse);
+            }
+        }
+
+        private void OnCollisionEnter(Collision collision)
+        {
+            isJump = true;
         }
 
 #if UNITY_EDITOR
