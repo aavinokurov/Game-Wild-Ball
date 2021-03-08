@@ -66,10 +66,12 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\BarrierTrigger.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
+    <Compile Include="Assets\Scripts\DoorController.cs" />
     <Compile Include="Assets\Scripts\GameOverController.cs" />
     <Compile Include="Assets\Scripts\GlobalStringVars.cs" />
     <Compile Include="Assets\Scripts\HeartController.cs" />
     <Compile Include="Assets\Scripts\InputController.cs" />
+    <Compile Include="Assets\Scripts\KeyController.cs" />
     <Compile Include="Assets\Scripts\MenuController.cs" />
     <Compile Include="Assets\Scripts\MovementController.cs" />
     <Compile Include="Assets\Scripts\OpenBridge.cs" />

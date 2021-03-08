@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Barrier
   - Heart
+  - Key
   layers:
   - Default
   - TransparentFX

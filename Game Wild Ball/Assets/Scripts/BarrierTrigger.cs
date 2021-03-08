@@ -10,8 +10,12 @@ namespace WildBall
         [SerializeField] private Image[] Hearts;
         [SerializeField] private Sprite imgFullHearts;
         [SerializeField] private Sprite imgEmptyHearts;
+        [SerializeField] private Image keyImage;
+        [SerializeField] private Sprite imgFullKey;
+        [SerializeField] private Sprite imgEmptyKey;
         [SerializeField] private Animator ballBarrier;
         [SerializeField] private GameObject gameOverPanel;
+        public bool haveKey;
         private int indexHeart;
         private bool isImmortality = true;
 
@@ -23,6 +27,8 @@ namespace WildBall
             {
                 Hearts[i].sprite = imgFullHearts;
             }
+            keyImage.sprite = imgEmptyKey;
+            haveKey = true;
         }
 
         private void OnTriggerEnter(Collider player)
@@ -46,6 +52,12 @@ namespace WildBall
             {
                 indexHeart--;
                 Hearts[indexHeart].sprite = imgFullHearts;                
+            }
+
+            if(player.CompareTag("Key"))
+            {
+                haveKey = true;
+                keyImage.sprite = imgFullKey;
             }
         }
 

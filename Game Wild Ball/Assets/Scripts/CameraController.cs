@@ -6,7 +6,7 @@ public class CameraController : MonoBehaviour
 {
     [SerializeField] private Transform playerTransform;
 
-    private Vector3 offset;
+    public Vector3 offset;
 
     private void Start()
     {
