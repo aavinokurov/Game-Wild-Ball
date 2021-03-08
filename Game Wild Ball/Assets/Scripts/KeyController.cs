@@ -2,16 +2,25 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class KeyController : MonoBehaviour
+namespace WildBall.Inputs
 {
-    [SerializeField] private Animator keyAnim;
-
-    private void OnTriggerEnter(Collider player)
+    public class KeyController : MonoBehaviour
     {
-        if (player.CompareTag("Player"))
+        [SerializeField] private Animator keyAnim;
+        [SerializeField] private Transform cameraPosition;
+        [SerializeField] private CameraController mainCamera;
+        [SerializeField] private InputController inputController;
+
+        private void OnTriggerEnter(Collider player)
         {
-            keyAnim.SetBool("TakeKey", true);
-            Destroy(gameObject, 1.0f);
+            if (player.CompareTag("Player"))
+            {
+                keyAnim.SetBool("TakeKey", true);
+                Destroy(gameObject, 1.0f);
+                mainCamera.offset = cameraPosition.position - mainCamera.playerTransform.position;
+                mainCamera.transform.rotation = Quaternion.Euler(30, -180, 0);
+                inputController.forward = false;
+            }
         }
     }
 }

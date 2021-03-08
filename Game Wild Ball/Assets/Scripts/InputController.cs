@@ -9,13 +9,20 @@ namespace WildBall.Inputs
     {
         [SerializeField] private MovementController playerMovement;
         private Vector3 movement;
+        public bool forward = true;
         
         private void Update()
         {
             float horizontal = Input.GetAxis(GlobalStringVars.HORIZONTAL_AXIS);
             float vertical = Input.GetAxis(GlobalStringVars.VERTICAL_AXIS);
 
-            movement = new Vector3(horizontal, 0, vertical).normalized;
+            if (forward)
+            {
+                movement = new Vector3(horizontal, 0, vertical).normalized;
+            } else
+            {
+                movement = new Vector3(-horizontal, 0, -vertical).normalized;
+            }
         }
 
         private void FixedUpdate()

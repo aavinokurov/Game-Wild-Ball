@@ -2,16 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HeartController : MonoBehaviour
+namespace WildBall
 {
-    [SerializeField] private Animator heartAnim;
-
-    private void OnTriggerEnter(Collider player)
+    public class HeartController : MonoBehaviour
     {
-        if(player.CompareTag("Player"))
+        [SerializeField] private Animator heartAnim;
+        [SerializeField] private BarrierTrigger ball;
+
+        private void OnTriggerEnter(Collider player)
         {
-            heartAnim.SetBool("TakeHeart", true);
-            Destroy(gameObject, 1.0f);
+            if (player.CompareTag("Player") && ball.indexHeart != 0)
+            {
+                heartAnim.SetBool("TakeHeart", true);
+                Destroy(gameObject, 1.0f);
+            }
         }
     }
 }

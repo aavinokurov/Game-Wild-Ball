@@ -16,7 +16,7 @@ namespace WildBall
         [SerializeField] private Animator ballBarrier;
         [SerializeField] private GameObject gameOverPanel;
         public bool haveKey;
-        private int indexHeart;
+        public int indexHeart;
         private bool isImmortality = true;
 
         private void Start()
@@ -28,7 +28,7 @@ namespace WildBall
                 Hearts[i].sprite = imgFullHearts;
             }
             keyImage.sprite = imgEmptyKey;
-            haveKey = true;
+            haveKey = false;
         }
 
         private void OnTriggerEnter(Collider player)
