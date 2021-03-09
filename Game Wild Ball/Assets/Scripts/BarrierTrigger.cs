@@ -10,14 +10,17 @@ namespace WildBall
         [SerializeField] private Image[] Hearts;
         [SerializeField] private Sprite imgFullHearts;
         [SerializeField] private Sprite imgEmptyHearts;
-        [SerializeField] private Image keyImage;
+        [SerializeField] public Image keyImage;
         [SerializeField] private Sprite imgFullKey;
-        [SerializeField] private Sprite imgEmptyKey;
+        [SerializeField] public Sprite imgEmptyKey;
         [SerializeField] private Animator ballBarrier;
         [SerializeField] private GameObject gameOverPanel;
         public bool haveKey;
         public int indexHeart;
         private bool isImmortality = true;
+        public float timerStart;
+        public int takeHearts;
+        public int loseHearts;
 
         private void Start()
         {
@@ -29,6 +32,9 @@ namespace WildBall
             }
             keyImage.sprite = imgEmptyKey;
             haveKey = false;
+            timerStart = Time.time;
+            takeHearts = 0;
+            loseHearts = 0;
         }
 
         private void OnTriggerEnter(Collider player)
@@ -40,18 +46,21 @@ namespace WildBall
                 ballBarrier.SetBool("TriggerBarrier", !isImmortality);
                 StartCoroutine(timerImmortality());
                 indexHeart++;
+                loseHearts++;
             }
 
             if (player.CompareTag("Barrier") && isImmortality && indexHeart == Hearts.Length - 1)
             {
                 Time.timeScale = 0;
                 gameOverPanel.SetActive(true);
+                loseHearts++;
             }
 
             if(player.CompareTag("Heart") && indexHeart > 0 && indexHeart < Hearts.Length)
             {
                 indexHeart--;
-                Hearts[indexHeart].sprite = imgFullHearts;                
+                Hearts[indexHeart].sprite = imgFullHearts;
+                takeHearts++;
             }
 
             if(player.CompareTag("Key"))
