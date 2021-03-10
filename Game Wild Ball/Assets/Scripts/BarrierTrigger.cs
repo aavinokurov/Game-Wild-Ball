@@ -14,7 +14,7 @@ namespace WildBall
         [SerializeField] private Sprite imgFullKey;
         [SerializeField] public Sprite imgEmptyKey;
         [SerializeField] private Animator ballBarrier;
-        [SerializeField] private GameObject gameOverPanel;
+        [SerializeField] private GameObject gameOverPanel;        
         public bool haveKey;
         public int indexHeart;
         private bool isImmortality = true;
