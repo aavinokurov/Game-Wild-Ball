@@ -14,7 +14,7 @@ namespace WildBall
             if (player.CompareTag("Player") && ball.indexHeart != 0)
             {
                 heartAnim.SetBool("TakeHeart", true);
-                Destroy(gameObject, 1.0f);
+                Destroy(gameObject.GetComponent<BoxCollider>());
             }
         }
     }
