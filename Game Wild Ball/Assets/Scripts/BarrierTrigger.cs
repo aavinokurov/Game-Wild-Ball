@@ -14,7 +14,9 @@ namespace WildBall
         [SerializeField] private Sprite imgFullKey;
         [SerializeField] public Sprite imgEmptyKey;
         [SerializeField] private Animator ballBarrier;
-        [SerializeField] private GameObject gameOverPanel;        
+        [SerializeField] private GameObject gameOverPanel;
+        [SerializeField] private GameOverController gameOver;
+        [SerializeField] private MovementController ball;
         public bool haveKey;
         public int indexHeart;
         private bool isImmortality = true;
@@ -51,8 +53,10 @@ namespace WildBall
 
             if (player.CompareTag("Barrier") && isImmortality && indexHeart == Hearts.Length - 1)
             {
-                Time.timeScale = 0;
-                gameOverPanel.SetActive(true);
+                gameOver.ball.SetActive(false);
+                gameOver.destroyingParticle.Play();
+                ball.speed = 0;
+                StartCoroutine(gameOver.timerGameOver());
                 loseHearts++;
             }
 

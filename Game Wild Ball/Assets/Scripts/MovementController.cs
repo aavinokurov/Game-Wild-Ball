@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace WildBall.Inputs
+namespace WildBall
 {
     [RequireComponent(typeof(Rigidbody))]
     public class MovementController : MonoBehaviour
     {
-        [SerializeField, Range(0, 10)] private float speed = 2;
+        [Range(0, 10)] public float speed = 1;
         [SerializeField] private Rigidbody playerRigidbody;
         private bool isJump;
 
@@ -35,7 +35,7 @@ namespace WildBall.Inputs
         [ContextMenu("Reset Value")]
         public void ResetVals()
         {
-            speed = 2;
+            speed = 1;
         }
 #endif
     }

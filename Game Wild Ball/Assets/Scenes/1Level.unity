@@ -214,6 +214,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &104998494 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1182099431820200098, guid: 22dc44d5f3e704af0aa65b517bfe212e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1182099432341878882}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a7430a9d2364c74ba0396871e2aabe8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &118730753
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -899,6 +911,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3781c9c742c984e66bc39a207308467c, type: 3}
+--- !u!198 &323379008 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 323379008, guid: b543ca0c0c753445e915147d01d5129b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1667151169140798787}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &350840204 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7812129660720055853, guid: 1836a82ba65074d949918a973ad241f0,
@@ -1707,6 +1725,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a0704ca577c8430a87bb77a8ebbe729, type: 3}
+--- !u!1 &774370442 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1667151168491724816, guid: b543ca0c0c753445e915147d01d5129b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1667151169140798787}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &775295477
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5047,9 +5071,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1182099431820200098, guid: 22dc44d5f3e704af0aa65b517bfe212e,
         type: 3}
+      propertyPath: ball
+      value: 
+      objectReference: {fileID: 774370442}
+    - target: {fileID: 1182099431820200098, guid: 22dc44d5f3e704af0aa65b517bfe212e,
+        type: 3}
       propertyPath: gameOverPanel
       value: 
       objectReference: {fileID: 378779672}
+    - target: {fileID: 1182099431820200098, guid: 22dc44d5f3e704af0aa65b517bfe212e,
+        type: 3}
+      propertyPath: destroyingParticle
+      value: 
+      objectReference: {fileID: 323379008}
     - target: {fileID: 1182099431820200157, guid: 22dc44d5f3e704af0aa65b517bfe212e,
         type: 3}
       propertyPath: m_Name
@@ -5072,6 +5106,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1667151168213581648, guid: b543ca0c0c753445e915147d01d5129b,
+        type: 3}
+      propertyPath: gameOver
+      value: 
+      objectReference: {fileID: 104998494}
     - target: {fileID: 1667151168213581648, guid: b543ca0c0c753445e915147d01d5129b,
         type: 3}
       propertyPath: keyImage
