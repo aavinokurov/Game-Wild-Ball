@@ -1,11 +1,8 @@
 ﻿<Properties StartupConfiguration="{C16546C4-7E98-1EC9-99AF-DE59A4176288}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/BarrierTrigger.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/KeyController.cs">
     <Files>
-      <File FileName="Assets/Scripts/OpenBridge.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/DoorController.cs" />
-      <File FileName="Assets/Scripts/BarrierTrigger.cs" Line="17" Column="59" />
-      <File FileName="Assets/Scripts/WinController.cs" />
-      <File FileName="Assets/Scripts/SceneController.cs" />
+      <File FileName="Assets/Scripts/KeyController.cs" Line="18" Column="1" />
+      <File FileName="Assets/Scripts/HeartController.cs" Line="20" Column="37" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -13,7 +10,7 @@
           <Node name="Game Wild Ball" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="OpenBridge.cs" selected="True" />
+                <Node name="KeyController.cs" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -23,7 +20,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="5f39e57e-a79e-430a-bef6-2447ac95a822" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="11f2cb90-c5aa-40a2-8f5d-dfd08ca2bd4a" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
