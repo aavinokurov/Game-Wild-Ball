@@ -73,7 +73,6 @@
     <Compile Include="Assets\Scripts\HeartController.cs" />
     <Compile Include="Assets\Scripts\InputController.cs" />
     <Compile Include="Assets\Scripts\KeyController.cs" />
-    <Compile Include="Assets\Scripts\KeyController1.cs" />
     <Compile Include="Assets\Scripts\MenuController.cs" />
     <Compile Include="Assets\Scripts\MovementController.cs" />
     <Compile Include="Assets\Scripts\OpenBridge.cs" />

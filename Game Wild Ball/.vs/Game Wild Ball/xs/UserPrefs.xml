@@ -1,9 +1,5 @@
 ﻿<Properties StartupConfiguration="{C16546C4-7E98-1EC9-99AF-DE59A4176288}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/BarrierTrigger.cs">
-    <Files>
-      <File FileName="Assets/Scripts/BarrierTrigger.cs" Line="33" Column="1" />
-      <File FileName="Assets/Scripts/MovementController.cs" Line="10" Column="42" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
@@ -20,7 +16,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="11f2cb90-c5aa-40a2-8f5d-dfd08ca2bd4a" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="77264c62-73a2-421d-8327-f0bb42cc551a" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
