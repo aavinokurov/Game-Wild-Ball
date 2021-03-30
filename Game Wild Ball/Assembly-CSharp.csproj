@@ -76,6 +76,7 @@
     <Compile Include="Assets\Scripts\MenuController.cs" />
     <Compile Include="Assets\Scripts\MovementController.cs" />
     <Compile Include="Assets\Scripts\OpenBridge.cs" />
+    <Compile Include="Assets\Scripts\SaluteController.cs" />
     <Compile Include="Assets\Scripts\SandStormController.cs" />
     <Compile Include="Assets\Scripts\SceneController.cs" />
     <Compile Include="Assets\Scripts\WinController.cs" />
@@ -614,6 +615,15 @@
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>/Users/vinokurovaleksandr/Unity/Game-Wild-Ball/Game Wild Ball/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.ProBuilder">
+      <HintPath>/Users/vinokurovaleksandr/Unity/Game-Wild-Ball/Game Wild Ball/Library/ScriptAssemblies/Unity.ProBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.Editor">
+      <HintPath>/Users/vinokurovaleksandr/Unity/Game-Wild-Ball/Game Wild Ball/Library/ScriptAssemblies/Unity.ProBuilder.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
+      <HintPath>/Users/vinokurovaleksandr/Unity/Game-Wild-Ball/Game Wild Ball/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>/Users/vinokurovaleksandr/Unity/Game-Wild-Ball/Game Wild Ball/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
@@ -629,23 +639,14 @@
     <Reference Include="Unity.Rider.Editor">
       <HintPath>/Users/vinokurovaleksandr/Unity/Game-Wild-Ball/Game Wild Ball/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.ProBuilder.AddOns.Editor">
+      <HintPath>/Users/vinokurovaleksandr/Unity/Game-Wild-Ball/Game Wild Ball/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>/Users/vinokurovaleksandr/Unity/Game-Wild-Ball/Game Wild Ball/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>/Users/vinokurovaleksandr/Unity/Game-Wild-Ball/Game Wild Ball/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.ProBuilder">
-      <HintPath>/Users/vinokurovaleksandr/Unity/Game-Wild-Ball/Game Wild Ball/Library/ScriptAssemblies/Unity.ProBuilder.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.ProBuilder.Editor">
-      <HintPath>/Users/vinokurovaleksandr/Unity/Game-Wild-Ball/Game Wild Ball/Library/ScriptAssemblies/Unity.ProBuilder.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
-      <HintPath>/Users/vinokurovaleksandr/Unity/Game-Wild-Ball/Game Wild Ball/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.ProBuilder.AddOns.Editor">
-      <HintPath>/Users/vinokurovaleksandr/Unity/Game-Wild-Ball/Game Wild Ball/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup></ItemGroup>

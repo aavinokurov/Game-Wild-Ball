@@ -7,7 +7,7 @@ public class SandStormController : MonoBehaviour
 {
     [SerializeField] private Rigidbody playerRigidBody;
     [SerializeField] private ParticleSystem sandStormParticle;
-    private Vector3 sandForce = new Vector3(10, 0, 0);
+    private Vector3 sandForce = new Vector3(15, 0, 0);
     private System.Random rnd = new System.Random();
     private float time;
 
