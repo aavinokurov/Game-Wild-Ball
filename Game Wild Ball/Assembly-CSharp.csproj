@@ -634,6 +634,18 @@
     <Reference Include="UnityEditor.UI">
       <HintPath>/Users/vinokurovaleksandr/Unity/Game-Wild-Ball/Game Wild Ball/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.ProBuilder">
+      <HintPath>/Users/vinokurovaleksandr/Unity/Game-Wild-Ball/Game Wild Ball/Library/ScriptAssemblies/Unity.ProBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.Editor">
+      <HintPath>/Users/vinokurovaleksandr/Unity/Game-Wild-Ball/Game Wild Ball/Library/ScriptAssemblies/Unity.ProBuilder.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
+      <HintPath>/Users/vinokurovaleksandr/Unity/Game-Wild-Ball/Game Wild Ball/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.AddOns.Editor">
+      <HintPath>/Users/vinokurovaleksandr/Unity/Game-Wild-Ball/Game Wild Ball/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup></ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
