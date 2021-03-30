@@ -1,12 +1,17 @@
 ﻿<Properties StartupConfiguration="{C16546C4-7E98-1EC9-99AF-DE59A4176288}|">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/SandStormController.cs">
+    <Files>
+      <File FileName="Assets/Scripts/SandStormController.cs" Line="26" Column="29" />
+      <File FileName="Assets/Scripts/InputController.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/MovementController.cs" Line="1" Column="1" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Game Wild Ball" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="BarrierTrigger.cs" selected="True" />
+                <Node name="SandStormController.cs" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -16,7 +21,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="77264c62-73a2-421d-8327-f0bb42cc551a" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="3da69a51-74c9-4dc5-b791-31bb24abb127" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

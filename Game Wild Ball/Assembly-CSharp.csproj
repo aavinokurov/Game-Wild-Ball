@@ -76,6 +76,7 @@
     <Compile Include="Assets\Scripts\MenuController.cs" />
     <Compile Include="Assets\Scripts\MovementController.cs" />
     <Compile Include="Assets\Scripts\OpenBridge.cs" />
+    <Compile Include="Assets\Scripts\SandStormController.cs" />
     <Compile Include="Assets\Scripts\SceneController.cs" />
     <Compile Include="Assets\Scripts\WinController.cs" />
     <None Include="Assets\Img\kenney_platformerkit2\License.txt" />
